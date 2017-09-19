@@ -100,28 +100,28 @@ declaration  := function |
                 variable  
 _start 	     := declaration  
   
-# We can notice the statements rule here : it think it define le LL parser  
-# Doable via list I guess, what the best choice LR or LL ?  
-# how to manager return !? What is the name ? keywords ?  
-# Can see in parenthesis something wrong ... Don't know why ...  
+We can notice the statements rule here : it think it define le LL parser  
+Doable via list I guess, what the best choice LR or LL ?  
+how to manager return !? What is the name ? keywords ?  
+Can see in parenthesis something wrong ... Don't know why ...  
   
-# Can be declaration OR statement ?  
-# else declaration is statement.  
-# Both use expression !  
-# Think scopes !  
+Can be declaration OR statement ?  
+else declaration is statement.  
+Both use expression !  
+Think scopes !  
   
   
-## Check with `@tchoum'  
-# declaration and expression are on the same layer  
-# Write terminals  
-# NPDA stack state machine  
-# Elements Of The Theory Of Computation - Harry R. Levis / Christos H. Papadimitriou  
-# |_> Book  
+Check with `@tchoum'  
+declaration and expression are on the same layer  
+Write terminals  
+NPDA stack state machine  
+Elements Of The Theory Of Computation - Harry R. Levis / Christos H. Papadimitriou  
+|_> Book  
   
 # TODO :  
-# define terminal symbol and keep them in terminal state section  
+define terminal symbol and keep them in terminal state section  
   
-## SymTable :#  
+## SymTable :
  - LEXER populate the symtable  
  - PARSER update the symtable  
   
